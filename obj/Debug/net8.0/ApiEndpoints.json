@@ -1,0 +1,53 @@
+[
+  {
+    "ContainingType": "HomenagensApp.Controllers.HomenagensController",
+    "Method": "Enviar",
+    "RelativePath": "api/Homenagens/enviar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NomeCliente",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NomeMae",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Mensagem",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Foto",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "WhatsApp",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ParticipaSorteio",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HomenagensApp.Controllers.HomenagensController",
+    "Method": "Exportar",
+    "RelativePath": "api/Homenagens/export",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

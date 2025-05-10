@@ -1,0 +1,11 @@
+
+services:
+  - type: web
+    name: homenagens-api
+    env: dotnet
+    buildCommand: dotnet publish -c Release -o out
+    startCommand: dotnet out/HomenagensApp.dll
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+    autoDeploy: true
