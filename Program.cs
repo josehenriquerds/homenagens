@@ -14,8 +14,15 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 // CORS
 builder.Services.AddCors(options =>
+{
     options.AddDefaultPolicy(policy =>
-        policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()));
+        policy
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials()
+            .SetIsOriginAllowed(_ => true)); // ou especifique seu domínio
+});
+
 
 // Controllers, SignalR e Swagger
 builder.Services.AddControllers();
