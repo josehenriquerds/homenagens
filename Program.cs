@@ -17,12 +17,11 @@ builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
         policy
+            .WithOrigins("https://frontend-react-delta-roan.vercel.app")
             .AllowAnyHeader()
             .AllowAnyMethod()
-            .AllowCredentials()
-            .SetIsOriginAllowed(_ => true)); // ou especifique seu domínio
+            .AllowCredentials());
 });
-
 
 // Controllers, SignalR e Swagger
 builder.Services.AddControllers();
